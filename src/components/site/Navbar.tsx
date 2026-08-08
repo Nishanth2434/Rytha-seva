@@ -37,9 +37,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6">
         <Link to="/" className="flex min-w-0 items-center gap-2">
-          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-2xl gradient-primary text-primary-foreground shadow-soft">
-            <Leaf className="h-5 w-5" />
-          </span>
+          <img src="/logo.png" alt="KrishiMitra AI" className="h-10 w-10 shrink-0 object-contain" />
           <span className="truncate text-lg font-bold">
             Krishi<span className="text-primary">Mitra</span> AI
           </span>
