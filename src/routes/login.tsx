@@ -38,6 +38,39 @@ function LoginPage() {
   const [loading, setLoading] = useState(false);
   const [googleLoading, setGoogleLoading] = useState(false);
 
+  const handleGoogleLogin = () => {
+    setGoogleLoading(true);
+    toast.error("Google login is currently not configured. Please use email instead.");
+    setGoogleLoading(false);
+  };
+
+  async function signIn(e: React.FormEvent) {
+    e.preventDefault();
+    if (!email || !password) {
+      toast.error("Please enter your email and password.");
+      return;
+    }
+
+    setLoading(true);
+
+    const { data, error } = await apiRequest<{ access: string; refresh: string }>("/auth/login/", {
+      method: "POST",
+      body: JSON.stringify({ email, password }),
+    });
+
+    setLoading(false);
+
+    if (error || !data) {
+      toast.error(error || "Invalid credentials. Please try again.");
+      return;
+    }
+
+    setAuthTokens(data.access, data.refresh);
+    window.dispatchEvent(new Event("auth-state-changed"));
+    toast.success("Welcome back!");
+    navigate({ to: "/", replace: true });
+  }
+
   async function signUp(e: React.FormEvent) {
     e.preventDefault();
     if (password !== confirmPassword) {
