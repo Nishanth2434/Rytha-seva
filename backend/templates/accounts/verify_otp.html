@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enter your verification code">
+    <title>Verify Email — OTP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f8f9fb;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+            color: #1a1a2e;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+            width: 100%;
+            max-width: 440px;
+            padding: 40px 36px;
+            text-align: center;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon {
+            width: 56px;
+            height: 56px;
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 24px;
+        }
+
+        .icon svg { width: 28px; height: 28px; fill: #fff; }
+
+        h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 6px;
+        }
+
+        .email-display {
+            color: #4361ee;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 28px;
+            word-break: break-all;
+        }
+
+        .messages {
+            list-style: none;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .messages li {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 8px;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .messages .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .messages .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+        .messages .warning { background: #fff3cd; color: #856404; border: 1px solid #ffeaa7; }
+        .messages .info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #e0e3ea;
+            border-radius: 12px;
+            font-size: 1.8rem;
+            font-family: 'Inter', monospace;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 10px;
+            outline: none;
+            background: #fafbfc;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        .form-group input:focus {
+            border-color: #4361ee;
+            box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+            background: #fff;
+        }
+
+        .form-group input::placeholder {
+            color: #d0d5e0;
+            letter-spacing: 10px;
+            font-size: 1.8rem;
+        }
+
+        .field-errors {
+            list-style: none;
+            margin-top: 6px;
+        }
+
+        .field-errors li {
+            font-size: 0.8rem;
+            color: #dc3545;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 10px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #4361ee, #3a0ca3);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(67, 97, 238, 0.35);
+        }
+
+        .btn-primary:active { transform: translateY(0); }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 22px 0;
+            color: #b0b8c9;
+            font-size: 0.8rem;
+        }
+
+        .divider::before, .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #e5e7eb;
+        }
+
+        .divider span { padding: 0 12px; }
+
+        .resend-section {
+            text-align: center;
+        }
+
+        .resend-link {
+            display: inline-block;
+            color: #4361ee;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: background 0.2s;
+        }
+
+        .resend-link:hover {
+            background: #f0f4ff;
+            text-decoration: none;
+        }
+
+        .resend-link.disabled {
+            color: #b0b8c9;
+            pointer-events: none;
+            cursor: not-allowed;
+        }
+
+        .timer {
+            color: #6b7280;
+            font-size: 0.8rem;
+            margin-top: 6px;
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #6b7280;
+            font-size: 0.85rem;
+            text-decoration: none;
+        }
+
+        .back-link:hover { color: #4361ee; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+
+        <h1>Check Your Email</h1>
+        <p class="subtitle">We sent a 6-digit verification code to</p>
+        <p class="email-display">{{ email }}</p>
+
+        {% if messages %}
+        <ul class="messages">{% for message in messages %}<li class="{{ message.tags }}">{{ message }}</li>{% endfor %}</ul>
+        {% endif %}
+
+        <form method="post" novalidate id="otp-form">
+            {% csrf_token %}
+
+            <div class="form-group">
+                <label for="otp-input" style="display:none;">6-Digit Verification Code</label>
+                {{ form.otp }}
+                {% if form.otp.errors %}
+                <ul class="field-errors">{% for error in form.otp.errors %}<li>{{ error }}</li>{% endfor %}</ul>
+                {% endif %}
+            </div>
+
+            <button type="submit" class="btn btn-primary" id="verify-btn">Verify Email</button>
+        </form>
+
+        <div class="divider"><span>didn't receive the code?</span></div>
+
+        <div class="resend-section">
+            <a href="{% url 'accounts:resend_otp' %}" class="resend-link" id="resend-btn">Resend Code</a>
+            <p class="timer" id="cooldown-timer"></p>
+        </div>
+
+        <a href="{% url 'accounts:register' %}" class="back-link">← Back to registration</a>
+    </div>
+
+    <script>
+        // Auto-focus the OTP input
+        document.addEventListener('DOMContentLoaded', function() {
+            const otpInput = document.getElementById('otp-input');
+            if (otpInput) {
+                otpInput.focus();
+                // Allow only digits
+                otpInput.addEventListener('input', function(e) {
+                    this.value = this.value.replace(/[^0-9]/g, '').slice(0, 6);
+                });
+            }
+
+            // Resend cooldown timer (60 seconds from page load)
+            const resendBtn = document.getElementById('resend-btn');
+            const timerEl = document.getElementById('cooldown-timer');
+            let cooldown = 60;
+
+            function updateTimer() {
+                if (cooldown > 0) {
+                    resendBtn.classList.add('disabled');
+                    timerEl.textContent = `You can resend in ${cooldown}s`;
+                    cooldown--;
+                    setTimeout(updateTimer, 1000);
+                } else {
+                    resendBtn.classList.remove('disabled');
+                    timerEl.textContent = '';
+                }
+            }
+
+            // Start cooldown if page just loaded (user just got OTP)
+            {% if messages %}
+                updateTimer();
+            {% endif %}
+        });
+    </script>
+</body>
+</html>
