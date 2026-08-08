@@ -269,3 +269,26 @@ VITE_GEMINI_API_KEY="your_gemini_api_key_here"
 <div align="center">
   <b>Built with ❤️ for Indian farmers.</b>
 </div>
+
+---
+
+## 👨‍💻 Author
+
+<table>
+  <tr>
+    <td align="center" width="180">
+      <br/>
+      <b>NISHANTH B</b><br/>
+      <sub>Full-Stack Developer</sub>
+    </td>
+    <td>
+      <p>Built the Smart Campus Complaint Portal end-to-end — design system, frontend, database schema and admin analytics.</p>
+      <a href="https://linkedin.com/in/your-profile"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+      <a href="https://github.com/your-username"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" /></a>
+      <a href="https://your-portfolio.com"><img src="https://img.shields.io/badge/Portfolio-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
+      <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+    </td>
+  </tr>
+</table>
+
+---
