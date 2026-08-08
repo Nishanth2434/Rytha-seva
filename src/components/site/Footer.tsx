@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <img src="/logo.png" alt="KrishiMitra AI" className="h-12 w-12 sm:h-14 sm:w-14 object-contain scale-125" />
+            <img src="/logo.png" alt="KrishiMitra AI" className="h-16 w-16 sm:h-20 sm:w-20 object-contain" />
             <span className="text-base font-bold">KrishiMitra AI</span>
           </div>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">

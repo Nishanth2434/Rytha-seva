@@ -123,7 +123,7 @@ function LoginPage() {
       <div className="w-full max-w-md animate-fade-up">
         <div className="mb-6 flex flex-col items-center">
           <Link to="/" className="flex items-center gap-2">
-            <img src="/logo.png" alt="KrishiMitra AI" className="h-20 w-20 sm:h-24 sm:w-24 object-contain scale-125" />
+            <img src="/logo.png" alt="KrishiMitra AI" className="h-24 w-24 sm:h-32 sm:w-32 object-contain" />
             <span className="text-2xl font-extrabold tracking-tight text-gray-900">
               Krishi<span className="text-green-600">Mitra</span> AI
             </span>
