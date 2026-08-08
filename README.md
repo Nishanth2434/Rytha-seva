@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="public/logo.png" alt="KrishiMitra AI logo" width="120" />
+<img src="public/logo.png" alt="KrishiMitra AI logo" width="220" />
 
-# 🌾 KrishiMitra AI
+#  KrishiMitra AI
 
 ### A modern agricultural intelligence platform — hyperlocal weather, pest AI, live markets, and equipment rentals in one place.
 
