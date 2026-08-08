@@ -61,7 +61,11 @@
   </tr>
   <tr>
     <td width="50%"><b>🚜 Equipment Rentals</b><br/><img src="docs/screenshots/equipment.png" alt="Equipment marketplace page" /></td>
-    <td width="50%"><b>📱 Krishi Shorts</b><br/><img src="docs/screenshots/shorts.png" alt="Farming short-form video feed" /></td>
+    <td width="50%"><b>💰 Market Analysis</b><br/><img src="docs/screenshots/market.png" alt="Live market prices" /></td>
+  </tr>
+  <tr>
+    <td width="50%"><b>🔐 Sign In</b><br/><img src="docs/screenshots/signin.png" alt="Sign in page" /></td>
+    <td width="50%"><b>📝 Sign Up</b><br/><img src="docs/screenshots/signup.png" alt="Registration page" /></td>
   </tr>
 </table>
 
