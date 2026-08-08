@@ -1,41 +1,98 @@
 <div align="center">
 
+<img src="public/favicon.ico" alt="KrishiMitra AI logo" width="120" />
+
 # 🌾 KrishiMitra AI
 
-### AI-Powered Farming Assistant for Indian farmers — make smarter decisions with weather intelligence, pest prediction, market insights, and more.
+### A modern agricultural intelligence platform — hyperlocal weather, pest AI, live markets, and equipment rentals in one place.
 
 <br/>
 
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Visit_Now-2563EB?style=for-the-badge&logoColor=white)](https://rytha-seva.vercel.app)
+[![Stars](https://img.shields.io/github/stars/Nishanth2434/Rytha-seva?style=for-the-badge&color=F59E0B)](https://github.com/Nishanth2434/Rytha-seva/stargazers)
 [![License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Version](https://img.shields.io/badge/Version-1.0.0-6366F1?style=for-the-badge)](https://github.com/Nishanth2434/Rytha-seva/releases)
+
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
-[![Django](https://img.shields.io/badge/Django-4.2+-092E20?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Django](https://img.shields.io/badge/Django-4.2+-092E20?style=flat-square&logo=django&logoColor=white)](https://www.djangoproject.com)
+[![SQLite](https://img.shields.io/badge/SQLite-DB-003B57?style=flat-square&logo=sqlite&logoColor=white)](https://sqlite.org)
 
 </div>
 
 ---
 
-## 📖 About the Project
+## 🌐 Live Demo
 
-**KrishiMitra AI** (formerly Rytha-seva) is a full-stack, multilingual platform designed to empower Indian farmers with data-driven insights. Farming is increasingly complex, and KrishiMitra AI simplifies it by combining real-time weather forecasts, AI-driven pest detection, live mandi prices, and an equipment rental marketplace into one easy-to-use application. 
+<div align="center">
 
-With full support for **English**, **Kannada (ಕನ್ನಡ)**, and **Hindi (हिन्दी)**, KrishiMitra AI bridges the technology gap and brings modern agricultural intelligence directly to the hands of farmers.
+### Try the live website here 👇
+
+<a href="https://rytha-seva.vercel.app">
+  <img src="https://img.shields.io/badge/🚀_LAUNCH_LIVE_APP-rytha--seva.vercel.app-2563EB?style=for-the-badge&logoColor=white" alt="Live Website" height="52" />
+</a>
+
+<br/><br/>
+
+| Area                   | URL                                                  |
+| :--------------------- | :--------------------------------------------------- |
+| 👨‍🌾 Farmer portal     | https://rytha-seva.vercel.app                        |
+| 🚜 Owner Dashboard     | https://rytha-seva.vercel.app/owner/dashboard        |
+| 🔐 Login / Register    | https://rytha-seva.vercel.app/login                  |
+
+</div>
 
 ---
 
-## ✨ Core Features
+## 📸 A Look Inside — Website Trailer
+
+<div align="center">
+
+<b>🏠 Home — Weather forecasts, quick actions, and market insights</b>
+
+<img src="docs/screenshots/home.png" alt="KrishiMitra AI home page" width="100%" />
+
+</div>
+
+<table>
+  <tr>
+    <td width="50%"><b>🌦️ Weather Advisor</b><br/><img src="docs/screenshots/weather.png" alt="Weather recommendations page" /></td>
+    <td width="50%"><b>🐛 Pest AI Detection</b><br/><img src="docs/screenshots/pest.png" alt="Pest diagnosis and treatment page" /></td>
+  </tr>
+  <tr>
+    <td width="50%"><b>🚜 Equipment Rentals</b><br/><img src="docs/screenshots/equipment.png" alt="Equipment marketplace page" /></td>
+    <td width="50%"><b>📱 Krishi Shorts</b><br/><img src="docs/screenshots/shorts.png" alt="Farming short-form video feed" /></td>
+  </tr>
+</table>
+
+<div align="center">
+
+<b>👨‍🌾 Owner Dashboard — Manage your fleet, approve listings, and track rentals</b>
+
+<img src="docs/screenshots/dashboard.png" alt="Owner dashboard showing bookings and analytics" width="100%" />
+
+</div>
+
+<div align="center">
+
+🔒 The owner dashboard, equipment booking system, and AI diagnostic history live behind login —
+<a href="https://rytha-seva.vercel.app"><b>sign in on the live site</b></a> to see them in action.
+
+</div>
+
+---
+
+## ✨ Features
 
 <table>
   <tr>
     <td width="33%">
       <h3>🌦️ Weather Advisor</h3>
-      Hyperlocal 7-day forecasts automatically converted into actionable spray, irrigation, and harvest recommendations.
+      Hyperlocal 7-day forecasts automatically converted into actionable spray and irrigation recommendations.
     </td>
     <td width="33%">
       <h3>🐛 Pest AI</h3>
-      Upload crop photos for AI-powered disease detection with confidence scores and both organic/chemical treatment suggestions.
+      Upload crop photos for Gemini-powered disease detection with confidence scores and treatment suggestions.
     </td>
     <td width="33%">
       <h3>💰 Market Analysis</h3>
@@ -44,16 +101,16 @@ With full support for **English**, **Kannada (ಕನ್ನಡ)**, and **Hindi (�
   </tr>
   <tr>
     <td>
-      <h3>🚜 Equipment Rental</h3>
-      A marketplace to rent tractors, harvesters, and drones from verified owners, complete with an owner verification and booking system.
+      <h3>🚜 Equipment Rentals</h3>
+      A marketplace to rent tractors, harvesters, and drones from verified owners with a booking workflow.
     </td>
     <td>
       <h3>📱 Krishi Shorts</h3>
-      A TikTok/Reels-style short-form video content feed dedicated exclusively to farming tips and agricultural education.
+      A TikTok-style short-form video content feed dedicated exclusively to farming tips and education.
     </td>
     <td>
       <h3>🤖 AI Chatbot</h3>
-      "Alex"-style conversational assistant powered by Google Gemini to answer complex farming queries instantly.
+      Conversational agricultural assistant powered by Google Gemini to answer complex farming queries instantly.
     </td>
   </tr>
   <tr>
@@ -63,73 +120,95 @@ With full support for **English**, **Kannada (ಕನ್ನಡ)**, and **Hindi (�
     </td>
     <td>
       <h3>🌐 Multilingual</h3>
-      Seamlessly toggle between English, Kannada, and Hindi to ensure accessibility for all users.
+      Seamlessly toggle between English, Kannada (ಕನ್ನಡ), and Hindi (हिन्दी) for complete accessibility.
     </td>
     <td>
       <h3>🔐 Secure Authentication</h3>
-      Robust JWT-based authentication using Django REST Framework for secure user sessions and role management.
+      Robust JWT-based authentication using Django REST Framework with secure user sessions.
     </td>
   </tr>
 </table>
+
+<details>
+<summary><b>🤖 Smart extras</b></summary>
+
+- **AI-Powered Diagnostics** — Gemini 1.5 Flash Vision analyzes plant images to provide organic and chemical treatments.
+- **Multilingual Content Fallbacks** — AI translates advice and weather warnings into the user's selected language instantly.
+- **Owner Verification** — Trust system where equipment owners are verified before their listings go live on the marketplace.
+- **Location Auto-detect** — Automatically fetches the user's nearest village weather data without needing manual postal code entry.
+- **Offline-ready caching** — Weather and Market data are aggressively cached to save bandwidth for rural users with poor connectivity.
+
+</details>
 
 ---
 
 ## 🧰 Tech Stack
 
-| Layer | Technology |
-| :--- | :--- |
-| **Frontend** | React 19, TypeScript, TanStack Start/Router, Vite 8, TanStack Query |
-| **Styling** | Tailwind CSS 4, Radix UI, shadcn/ui components |
-| **Backend** | Python 3.10+, Django 4.2+, Django REST Framework (DRF) |
-| **Database** | SQLite (Development) |
-| **Authentication** | SimpleJWT (JWT Auth), Google OAuth |
-| **AI / External APIs** | Google Gemini API (Chatbot & Vision), Open-Meteo (Weather) |
-| **Package Managers** | npm / bun (Frontend), pip (Backend) |
+| Layer               | Technology                                                |
+| :------------------ | :-------------------------------------------------------- |
+| **Frontend**        | React 19 + TanStack Start (SSR) + TanStack Router         |
+| **Backend**         | Python 3.10+ with Django 4.2+ & Django REST Framework     |
+| **Database**        | SQLite (Development)                                      |
+| **Authentication**  | Managed auth — email/password, SimpleJWT                  |
+| **Hosting (Web)**   | Vercel (Edge deployment + CDN)                            |
+| **UI Framework**    | Tailwind CSS v4 + shadcn/ui + Radix primitives            |
+| **Icons**           | Lucide React                                              |
+| **Data Fetching**   | TanStack Query                                            |
+| **AI Integration**  | Google Gemini API (Vision & Text models)                  |
+| **External APIs**   | Open-Meteo (Weather Data)                                 |
 
 ---
 
-## 📸 Screenshots
+## 🏗️ Architecture
 
-<div align="center">
+The application is built on a decoupled full-stack architecture. The React frontend interacts with the Django REST API backend, utilizing JWTs for secure access. AI processing is handed off to the Gemini API, while external agricultural data is pulled from Open-Meteo.
 
-<b>🏠 Home Dashboard — Weather, Market Insights, and Quick Actions</b>
+```text
+Frontend (React + TanStack Router)
+        ↓
+Backend API (Django REST Framework)
+        ↓
+Authentication (SimpleJWT + Session Roles)
+        ↓
+Database (SQLite / PostgreSQL in prod)
+        ↓
+AI Inference (Google Gemini Vision & Text)
+```
 
-<img src="docs/screenshots/home.png" alt="Home Dashboard placeholder" width="100%" />
-
-</div>
-
-<table>
-  <tr>
-    <td width="50%"><b>🌦️ Weather Advisor</b><br/><img src="docs/screenshots/weather.png" alt="Weather page placeholder" /></td>
-    <td width="50%"><b>🐛 Pest AI Detection</b><br/><img src="docs/screenshots/pest.png" alt="Pest AI placeholder" /></td>
-  </tr>
-  <tr>
-    <td width="50%"><b>🚜 Equipment Marketplace</b><br/><img src="docs/screenshots/equipment.png" alt="Equipment page placeholder" /></td>
-    <td width="50%"><b>📱 Krishi Shorts</b><br/><img src="docs/screenshots/shorts.png" alt="Shorts feed placeholder" /></td>
-  </tr>
-</table>
+```mermaid
+flowchart TD
+    U[Farmer / Owner Browser] --> FE[React + TanStack Router]
+    FE --> BE[Django REST API]
+    BE --> AUTH[SimpleJWT Auth]
+    AUTH --> DB[(SQLite DB)]
+    FE --> API_W[Open-Meteo API]
+    FE --> API_M[Market Price APIs]
+    BE --> AI[Google Gemini API - Pest & Chat]
+    AI --> FE
+```
 
 ---
 
 ## 📁 Project Structure
 
 ```text
-krishimitra-ai/
+rytha-seva/
 ├── backend/                   # Django REST Framework Backend
 │   ├── accounts/              # User models, profiles, and auth logic
-│   ├── api/                   # Core application endpoints and business logic
+│   ├── api/                   # Core application endpoints (equipment, weather, pests)
 │   ├── config/                # Django project settings and root routing
 │   ├── manage.py              # Django execution script
 │   └── requirements.txt       # Python dependencies
 │
 ├── src/                       # React Frontend
-│   ├── components/            # Reusable UI components (shadcn, etc.)
-│   ├── hooks/                 # Custom React hooks (auth, API fetchers)
-│   ├── lib/                   # Utility functions and API client configuration
+│   ├── assets/                # Logos and local images
+│   ├── components/            # Reusable UI (shadcn, forms, navigation)
+│   ├── hooks/                 # Custom React hooks (auth, geolocation)
+│   ├── lib/                   # Utility functions and API client
 │   ├── routes/                # TanStack Router page definitions
 │   └── main.tsx               # Frontend entry point
 │
-├── public/                    # Static assets
+├── public/                    # Static assets, favicon
 ├── docs/
 │   └── screenshots/           # README images
 ├── .env.example               # Example environment variables
@@ -141,99 +220,45 @@ krishimitra-ai/
 
 ## 🚀 Getting Started
 
-### Prerequisites
-- **Node.js** (v18+)
-- **npm** or **bun**
-- **Python** (v3.10+)
+To run this project locally, you will need **Node.js 18+** and **Python 3.10+**.
 
-### 1. Clone the repository
+### 1. Clone & Install
 ```bash
 git clone https://github.com/Nishanth2434/Rytha-seva.git
 cd Rytha-seva
 ```
 
-### 2. Backend Setup (Django)
-Open a terminal and navigate to the project root:
+### 2. Backend Setup
 ```bash
 # Create and activate a virtual environment
 python -m venv venv
+venv\Scripts\activate   # Windows
+# source venv/bin/activate # macOS/Linux
 
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-
-# Install dependencies
+# Install dependencies and setup database
 pip install -r backend/requirements.txt
-
-# Run migrations to set up the database
 python backend/manage.py migrate
-
-# Create a superuser (admin account)
 python backend/manage.py createsuperuser
 
-# Start the development server
+# Start the server (runs on port 8000)
 python backend/manage.py runserver 8000
 ```
-The backend API will be running at `http://localhost:8000`.
 
-### 3. Frontend Setup (React/Vite)
-Open a new terminal, navigate to the project root:
+### 3. Frontend Setup
 ```bash
-# Install frontend dependencies
+# Open a new terminal in the project root
 npm install
 
-# Start the Vite development server
+# Start the frontend (runs on port 5173)
 npm run dev
 ```
-The frontend will be available at `http://localhost:5173` (or the port specified in your console).
 
 ### 4. Environment Variables
-Create a `.env` file in the root of the project and configure the following variables:
-
-| Variable | Description | Example |
-| :--- | :--- | :--- |
-| `VITE_DJANGO_API_URL` | The URL of your local Django backend API. | `http://localhost:8000/api` |
-| `VITE_GEMINI_API_KEY` | API Key for Google Gemini (Pest AI & Chatbot). | `AIzaSyYourGeminiKeyHere...` |
-| `SECRET_KEY` | Django secret key (usually in backend `settings.py` or `.env`). | `django-insecure-...` |
-
-> **Note:** We recommend duplicating `.env.example` to `.env` to quickly set up your local environment.
-
----
-
-## 🔌 API Endpoints Overview
-
-The backend exposes a comprehensive REST API. Most endpoints (except public ones like registration or weather) require a valid JWT token passed in the `Authorization: Bearer <token>` header.
-
-| Feature Area | Endpoint Base | Description | Auth Required? |
-| :--- | :--- | :--- | :--- |
-| **Authentication** | `/api/auth/` | Login (`/login/`), Register (`/register/`), Refresh token | ❌ |
-| **User Profiles** | `/api/profiles/` | Get/update farmer profiles, settings, and language preferences | ✅ |
-| **Equipment** | `/api/equipment/` | Browse rental marketplace, add new equipment listings | ✅ |
-| **Bookings** | `/api/bookings/` | Create and track equipment rental requests | ✅ |
-| **Weather** | `/api/weather/` | Fetch cached Open-Meteo forecasts by village | ❌ |
-| **Market Prices** | `/api/market-prices/` | Get latest mandi prices for specific crops | ❌ |
-| **Pest Reports** | `/api/pest-reports/` | Save and fetch previous AI pest diagnoses | ✅ |
-| **Reels (Shorts)** | `/api/reels/` | Fetch short-form farming video content feed | ❌ |
-| **Advertisements** | `/api/ads/` | Promotional banners and announcements | ❌ |
-
----
-
-## 🤝 Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+Create a `.env` file in the root based on `.env.example`:
+```env
+VITE_DJANGO_API_URL="http://localhost:8000/api"
+VITE_GEMINI_API_KEY="your_gemini_api_key_here"
+```
 
 ---
 
