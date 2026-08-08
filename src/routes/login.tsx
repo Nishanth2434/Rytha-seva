@@ -9,7 +9,6 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { apiRequest, setAuthTokens } from "@/lib/api-client";
 import { useAuth } from "@/hooks/use-auth";
-import { sendEmail } from "@/lib/email";
 
 export const Route = createFileRoute("/login")({
   head: () => ({
@@ -112,13 +111,7 @@ function LoginPage() {
     setAuthTokens(loginData.access, loginData.refresh);
     window.dispatchEvent(new Event("auth-state-changed"));
 
-    // Trigger EmailJS welcome notification
-    sendEmail({
-      to_name: fullName || email,
-      to_email: email,
-      subject: "Welcome to KrishiMitra AI!",
-      message: `Hello ${fullName || "Farmer"}, welcome to KrishiMitra AI! Your account is now active.`,
-    });
+
 
     toast.success("Account created successfully! Welcome to KrishiMitra AI!");
     navigate({ to: "/", replace: true });
