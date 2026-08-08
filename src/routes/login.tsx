@@ -48,7 +48,7 @@ function LoginPage() {
 
     const { data, error } = await apiRequest<{ access: string; refresh: string }>("/auth/login/", {
       method: "POST",
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username: email, password }),
     });
 
     setLoading(false);
@@ -98,7 +98,7 @@ function LoginPage() {
     // Auto-login after successful registration
     const { data: loginData, error: loginError } = await apiRequest<{ access: string; refresh: string }>("/auth/login/", {
       method: "POST",
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ username: email, password }),
     });
 
     setLoading(false);
