@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/favicon.ico" alt="KrishiMitra AI logo" width="120" />
+<img src="public/logo.png" alt="KrishiMitra AI logo" width="120" />
 
 # 🌾 KrishiMitra AI
 
